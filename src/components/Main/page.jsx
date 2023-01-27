@@ -46,7 +46,6 @@ export const Page = ({ state, handleChange, handleSubmit, showAlert }) => (
               <div className="MainPage__container__login__box__form--password">
                 <label htmlFor="password">Password : </label>
                 <input
-                  error={true}
                   id="password"
                   name="password"
                   type="password"

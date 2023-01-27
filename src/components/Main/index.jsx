@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Page } from "./page";
+import axios from "axios";
 
 export const MainPage = () => {
   let auxPassword = useRef(null);
@@ -31,12 +32,27 @@ export const MainPage = () => {
       password: "",
     });
 
+  const sendData = async () => {
+    try {
+      const URL = "http://127.0.0.1:8989/save";
+      const resp = await axios.post(URL, state, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      console.log(resp);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   const handleSubmit = (ev) => {
     ev.preventDefault();
     const { password } = state;
     auxPassword.current = password;
     cleanState();
     triggerAlert();
+    sendData();
   };
 
   return (
