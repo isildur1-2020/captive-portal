@@ -1,0 +1,142 @@
+.MainPage {
+    width: 100vw;
+    height:  100vh;
+    background-color: rgb(117,117,117);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MainPage__container {
+    max-width: 1240px;
+    width: 90%;
+    background-color: #fff;
+    padding: 4px;
+}
+
+.MainPage__container__header {
+    padding: 4px 16px;
+    display: flex;
+    color: #fff;
+    font-size: 1.15em;
+    justify-content: space-between;
+    background-color: rgb(64, 66, 65);
+}
+
+.MainPage__container__header--right { 
+    display: flex;
+    column-gap: 32px;
+}
+
+.MainPage__container__logo {
+    margin-top: 8px;
+    height: 128px;
+    border: 1px solid rgb(71, 139, 160);
+    display: flex;
+    align-items: center;
+}
+
+.MainPage__container__logo > img {
+    width: 256px;
+    margin-left: 16px;
+}
+
+.MainPage__container__login {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.MainPage__container__login__box {
+    margin-top: 64px;
+    width: 80%;
+    border: 1px solid rgb(246, 119, 53);
+    background-color: rgb(221, 221, 222);
+}
+
+.MainPage__container__login__box--title {
+    background-color: rgb(246, 119, 53);
+    padding: 8px 16px;
+}
+
+.MainPage__container__login__box--title > span {
+    font-weight: bold;
+     font-size: 1.05em;
+    letter-spacing: 1px;
+}
+
+.MainPage__container__login__box--subtitle {
+    padding: 12px 0 0 16px;
+    letter-spacing: 0.5px;
+}
+
+.MainPage__container__login__box__form {
+    margin: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MainPage__container__login__box__form--username > label {
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+.MainPage__container__login__box__form--username > select {
+    width: 164px;
+    font-size: 1.05em;
+}
+
+.MainPage__container__login__box__form--password > label {
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+.MainPage__container__login__box__form--password > input {
+    margin-top: 8px;
+    width: 164px;
+    font-size: 1.05em;
+}
+
+.MainPage__container__login__box__form--alert {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.MainPage__container__login__box__form--alert > strong {
+    color: #ba000d
+}
+
+.MainPage__container__login__box__form--submit {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.MainPage__container__login__box__form--submit > button {
+    padding: 4px 16px;
+    font-size: 1.05em;
+}
+
+.MainPage__container__login__footer {
+    margin-top: 48px;
+    padding: 32px 0 12px 16px;
+    background-color: rgb(64, 66, 65);
+}
+
+.MainPage__container__login__footer > span {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.MainPage__copyright {
+    margin-top: 32px;
+}
+
+.MainPage__copyright > span {
+    color: #fff;
+}
